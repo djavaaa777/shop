@@ -10,7 +10,7 @@ function Header(props) {
   let totalSum=0
   props.orders.forEach(el=>totalSum+=parseFloat(el.price))
   const handleOrder=()=>{
-    fetch('http://localhost:5000/ordered',{
+    fetch(`${process.env.REACT_APP_API_URL}/orders`,{
       method:'POST',
       headers: {
         "Content-Type": "application/json"
