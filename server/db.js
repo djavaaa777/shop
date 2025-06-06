@@ -1,22 +1,19 @@
-const express=require("express")
-const mysql=require("mysql2")
+const mysql = require("mysql2");
+require("dotenv").config();
 
-const app=express()
+const conn = mysql.createConnection({
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    database: process.env.DB_NAME,
+    password: process.env.DB_PASSWORD,
+});
 
-const conn=mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    database:'shop',
-    password:'',
-})
-
-conn.connect((err)=>{
-    if(err){
-        console.log(err)
+conn.connect((err) => {
+    if (err) {
+        console.log(err);
+    } else {
+        console.log("DATABASE------OK");
     }
-    else(
-        console.log("DATABASE------OK")
-    )
-})
+});
 
-module.exports=conn
+module.exports = conn;

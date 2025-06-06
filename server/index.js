@@ -5,6 +5,8 @@ const app=express()
 
 app.use(cors())
 app.use(express.json())
+require("dotenv").config();
+
 
 app.post("/contact",(req,res)=>{
     const{name,email,message}=req.body
@@ -41,7 +43,7 @@ app.post("/ordered",(req,res)=>{
     })
 })
 
-const PORT=5000
-app.listen(PORT,()=>{
-    console.log(`Server running on http://localhost:${PORT}`)
-})
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
+});
