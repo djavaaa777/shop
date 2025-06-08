@@ -46,11 +46,11 @@ function Header(props) {
       {props.orders.map(el => (
         <Order key={el.id} order={el} onDelete={props.onDelete}/>
       ))}
-      <div className="cart-total">Сумма:{totalSum.toFixed(2)}$</div>
-      <button onClick={handleOrder} className="order-btn">Оформить заказ</button>
+      <div className="cart-total">Sum:{totalSum.toFixed(2)}$</div>
+      <button onClick={handleOrder} className="order-btn">Place an order</button>
     </div>
     ) : (
-      <p className="empty-cart">Ваша корзина пуста</p>
+      <p className="empty-cart">Your cart is empty</p>
     )}
   </div>
 )}

@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <footer className="footer">
-        <p>Все права защищены &copy;</p>
+        <p>All rights reserved &copy;</p>
     </footer>
   )
 }
