@@ -527,3 +527,93 @@ header {
 }
 
 
+/* ===== MOBILE ADAPTATION ===== */
+@media (max-width: 998px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .header ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .header ul li {
+    padding: 5px 0;
+  }
+
+  .prasentation {
+    background-size: cover;
+    height: 400px;
+  }
+
+  .prasentation::before {
+    font-size: 28px;
+    top: 20%;
+    right: 10%;
+  }
+
+  .prasentation::after {
+    font-size: 16px;
+    top: 35%;
+    right: 10%;
+  }
+
+  .products {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .product-card {
+    width: 90%;
+  }
+
+  .deal-of-the-day {
+    padding: 20px;
+    margin: 30px 10px;
+  }
+
+  .deal-of-the-day img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .deal-of-the-day h2 {
+    font-size: 24px;
+  }
+
+  .about-container,
+  .contact-container {
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+  }
+
+  .about-container h1,
+  .contact-container h1 {
+    font-size: 24px;
+  }
+
+  .feature-card {
+    width: 100%;
+  }
+
+  .full-item-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .shop-cart {
+    right: 20px;
+    width: 90%;
+  }
+
+  .modal-overlay {
+    padding: 10px;
+  }
+}
