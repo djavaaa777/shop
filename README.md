@@ -26,10 +26,9 @@ An online grocery shop built with **React** (frontend), **Node.js + Express** (b
 
 - **Frontend**: React, CSS, React Icons, React Router
 - **Backend**: Node.js, Express
-- **Database**: MySQL (FreeSQLDatabase)
+- **Database**: MySQL
 - **Deployment**: 
   - Frontend: [Vercel](https://vercel.com/)
-  - Backend: [Render](https://render.com/)
 
 ---
 
