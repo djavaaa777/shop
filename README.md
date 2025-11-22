@@ -2,7 +2,7 @@
 
 An online grocery shop built with **React** (frontend), **Node.js + Express** (backend), and **MySQL** (database). Users can browse products, add them to a cart, place orders, and send contact messages.
 
-🌐 **Live Demo**: [https://shop-nu-lake.vercel.app](https://shop-nu-lake.vercel.app)
+🌐 **Mockup**: <img width="1905" height="875" alt="image" src="https://github.com/user-attachments/assets/9a6d92b2-ae53-42d8-bb51-ef1aa313b841" />
 
 ---
 
